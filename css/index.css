@@ -1,0 +1,208 @@
+/***
+Dashboard Stats
+***/
+
+.stats-box {
+  display: block;
+  margin-bottom: 25px;
+  overflow: hidden;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.03);
+}
+
+.stats-box .visual {
+  width: 80px;
+  height: 80px;
+  display: block;
+  float: left;
+  padding-top: 10px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.stats-box .visual> i {
+  margin-left: -35px;
+  font-size: 140px;
+  line-height: 110px;
+}
+
+.stats-box .details {
+  position: absolute;
+  right: 15px;
+  padding-right: 15px;
+}
+
+.stats-box .details .number {
+  padding-top: 25px;
+  text-align: right;
+  font-size: 34px;
+  line-height: 36px;
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+
+.stats-box .details .desc {
+  text-align: right;
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-weight: 300;
+}
+
+
+/*  red is the only collor for now
+    If you want you can at more colors here
+*/
+
+.stats-box.red {
+  background-color: #D70206;
+}
+
+.stats-box.red .visual> i {
+  color: #ffffff;
+  opacity: 0.25;
+  filter: alpha(opacity=10);
+}
+
+.stats-box.red .details .number {
+  color: #ffffff;
+}
+
+.stats-box.red .details .desc {
+  color: #ffffff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.stats-box.red .more {
+  color: #ffffff;
+  background-color: #e53e49;
+}
+/***
+End dashboard Stats
+***/
+
+/***
+Custom tabs
+***/
+
+.tabbable-line> .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+
+.tabbable-line> .nav-tabs> li {
+  margin: 0;
+  border-bottom: 4px solid transparent;
+}
+
+.tabbable-line> .nav-tabs> li> a {
+  background: none !important;
+  border: 0;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #737373;
+}
+
+.tabbable-line> .nav-tabs> li> a> i {
+  color: #a6a6a6;
+}
+
+.tabbable-line> .nav-tabs> li.active {
+  background: none;
+  border-bottom: 4px solid #e7505a;
+  position: relative;
+}
+
+.tabbable-line> .nav-tabs> li.active> a {
+  border: 0;
+  color: #333;
+}
+
+.tabbable-line> .nav-tabs> li.active> a> i {
+  color: #404040;
+}
+
+.tabbable-line> .nav-tabs> li.open,
+.tabbable-line> .nav-tabs> li:hover {
+  background: none;
+  border-bottom: 4px solid rgba(231, 80, 90, 0.5);
+}
+
+.tabbable-line> .nav-tabs> li.open> a,
+.tabbable-line> .nav-tabs> li:hover> a {
+  border: 0;
+  background: none !important;
+  color: #333;
+}
+
+.tabbable-line> .nav-tabs> li.open> a> i,
+.tabbable-line> .nav-tabs> li:hover> a> i {
+  color: #a6a6a6;
+}
+
+/* quick actions */
+.mt-actions .mt-action {
+  margin: 0px;
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid #f7f8f9; }
+  .mt-actions .mt-action:last-child {
+    border-bottom: 0px; }
+  .mt-actions .mt-action .mt-action-body {
+    padding-left: 15px;
+    position: relative;
+    overflow: hidden; }
+    .mt-actions .mt-action .mt-action-body .mt-action-row {
+      display: table;
+      width: 100%; }
+      .mt-actions .mt-action .mt-action-body .mt-action-row .mt-action-info {
+        display: table-cell;
+        vertical-align: top; }
+        .mt-actions .mt-action .mt-action-body .mt-action-row .mt-action-info .mt-action-icon {
+          display: table-cell;
+          padding: 6px 20px 6px 6px; }
+          .mt-actions .mt-action .mt-action-body .mt-action-row .mt-action-info .mt-action-icon > i {
+            display: inline-block;
+            position: relative;
+            top: 10px;
+            font-size: 25px;
+            color: #78E0E8; }
+        .mt-actions .mt-action .mt-action-body .mt-action-row .mt-action-info .mt-action-details {
+          display: table-cell;
+          vertical-align: top; }
+          .mt-actions .mt-action .mt-action-body .mt-action-row .mt-action-info .mt-action-details .mt-action-author {
+            color: #060606;
+            font-weight: 600; }
+          .mt-actions .mt-action .mt-action-body .mt-action-row .mt-action-info .mt-action-details .mt-action-desc {
+            margin-bottom: 0;
+            color: #999b9b; }
+      .mt-actions .mt-action .mt-action-body .mt-action-row .mt-action-datetime {
+        vertical-align: top;
+        display: table-cell;
+        text-align: center;
+        width: 150px;
+        white-space: nowrap;
+        padding-top: 15px;
+        color: #A6A8A8; }
+        .mt-actions .mt-action .mt-action-body .mt-action-row .mt-action-datetime .mt-action-dot {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background-color: red;
+          border-radius: 50% !important;
+          margin-left: 5px;
+          margin-right: 5px; }
+      .mt-actions .mt-action .mt-action-body .mt-action-row .mt-action-buttons {
+        vertical-align: top;
+        display: table-cell;
+        text-align: center;
+        width: 160px;
+        white-space: nowrap;
+        padding-top: 10px; }

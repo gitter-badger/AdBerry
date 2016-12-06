@@ -1,0 +1,204 @@
+/*********** 
+Default theme css
+If you make a new theme please commit it on github
+***********/
+
+
+/* Header search bar, toggler button & top menu */
+
+.page-header.navbar {
+  /* Top notification menu/bar */
+  /* Header seaech box */
+}
+/* the element behind the logo*/
+.page-header.navbar .page-logo {
+  background: #232F44;
+}
+
+.page-header.navbar .page-top {
+  box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.3);
+  background: #FFFFFF;
+}
+/* user dropdown button */
+.page-header.navbar .top-menu .navbar-nav> li.dropdown .dropdown-toggle:hover {
+  background-color: #FFFFFF;
+}
+
+.page-header.navbar .top-menu .navbar-nav> li.dropdown.open .dropdown-toggle {
+  background-color: #FFFFFF;
+}
+
+/* the little arrow*/
+.page-header.navbar .top-menu .navbar-nav> li.dropdown .dropdown-menu:before {
+  border-bottom-color: #e4e8ee;
+}
+
+.page-header.navbar .top-menu .navbar-nav> li.dropdown-extended .dropdown-menu {
+  border: 1px solid #e4e8ee;
+}
+/* Page sidebar */
+
+/* Default sidebar */
+.page-sidebar-fixed .page-sidebar:hover,
+.page-sidebar {
+  background-color: #26344B; 
+}
+
+/* inactive menu item*/
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu,
+.page-sidebar .page-sidebar-menu {
+  background-color: #26344B;
+}
+
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li> a,
+.page-sidebar .page-sidebar-menu> li> a {
+  /* border between menu items */
+  border-top: 1px #465b7f solid ;
+  /* menu item text collor */
+  color: #FFFFFF;
+}
+
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li> a> i[class^="icon-"],
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li> a> i[class*="icon-"],
+.page-sidebar .page-sidebar-menu> li> a> i[class^="icon-"],
+.page-sidebar .page-sidebar-menu> li> a> i[class*="icon-"] {
+  /* default menu icon color */
+  color: #4d5d7c;
+}
+
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li:hover> a,
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li.open> a,
+.page-sidebar .page-sidebar-menu> li:hover> a,
+.page-sidebar .page-sidebar-menu> li.open> a {
+  /* menu block hover color */
+  background: #212d41;
+  /* menu text hover color */
+  color: #e4e9f2;
+}
+
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li:hover> a> i,
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li.open> a> i,
+.page-sidebar .page-sidebar-menu> li:hover> a> i,
+.page-sidebar .page-sidebar-menu> li.open> a> i {
+  /* icon hover color */
+  color: #4d5d7c;
+}
+
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li.active> a,
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li.active.open> a,
+.page-sidebar .page-sidebar-menu> li.active> a,
+.page-sidebar .page-sidebar-menu> li.active.open> a {
+  /* active menu item BG*/
+  background: #D70206;
+  /* active menu text color */
+  color: white;
+}
+
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li.active> a:hover,
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li.active.open> a:hover,
+.page-sidebar .page-sidebar-menu> li.active> a:hover,
+.page-sidebar .page-sidebar-menu> li.active.open> a:hover {
+  /* menu hover color if the item is already active */
+  background: #FF0000;
+}
+
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li.active> a> i,
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li.active.open> a> i,
+.page-sidebar .page-sidebar-menu> li.active> a> i,
+.page-sidebar .page-sidebar-menu> li.active.open> a> i {
+  /* icon color active menu item*/
+  color: #18cdc4;
+}
+
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu> li> a,
+.page-sidebar .page-sidebar-menu .sub-menu> li> a {
+  /* sub item text color */
+  color: #b2c0d8;
+}
+
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu> li> a> i,
+.page-sidebar .page-sidebar-menu .sub-menu> li> a> i {
+  /* sub item icon color */
+  color: #516fa0;
+}
+
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu> li:hover> a,
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu> li.open> a,
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu> li.active> a,
+.page-sidebar .page-sidebar-menu .sub-menu> li:hover> a,
+.page-sidebar .page-sidebar-menu .sub-menu> li.open> a,
+.page-sidebar .page-sidebar-menu .sub-menu> li.active> a {
+  /* sub item bg color active hover*/
+  background: #D70206;
+}
+
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu> li:hover> a> i,
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu> li.open> a> i,
+.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu> li.active> a> i,
+.page-sidebar .page-sidebar-menu .sub-menu> li:hover> a> i,
+.page-sidebar .page-sidebar-menu .sub-menu> li.open> a> i,
+.page-sidebar .page-sidebar-menu .sub-menu> li.active> a> i {
+  /* submenu hover, active icon color */
+  color: #4d5d7c;
+  color: #90a5c7;
+}
+
+/******
+Page Footer 
+******/
+
+.page-footer .page-footer-inner {
+  color: #a1b2cf;
+}
+
+.page-footer-fixed .page-footer {
+  background-color: #a5aea8;
+}
+
+.page-footer-fixed .page-footer .page-footer-inner {
+  color: #121618;
+}
+
+.page-boxed .page-footer .page-footer-inner {
+  color: #121618;
+}
+
+.page-footer-fixed .page-boxed .page-footer {
+  background-color: #a5aea8;
+}
+
+@media (min-width: 992px) {
+  /* Fixed Sidebar */
+  .page-sidebar-fixed:not(.page-footer-fixed) .page-content {
+    border-bottom: 0;
+  }
+  .page-sidebar-fixed:not(.page-footer-fixed) .page-footer {
+    background-color: #eef1f5;
+  }
+  .page-sidebar-fixed:not(.page-footer-fixed) .page-footer .page-footer-inner {
+    color: #333;
+  }
+  /* Sidebar Menu Wirh Hoverable Submenu */
+  .page-sidebar-menu-hover-submenu li:hover a> .arrow {
+    border-right: 8px solid #1c2637;
+  }
+  .page-sidebar-reversed .page-sidebar-menu-hover-submenu li:hover a> .arrow {
+    border-left: 8px solid #1c2637;
+  }
+  .page-sidebar-menu-hover-submenu li:hover> .sub-menu {
+    background: #1c2637 !important;
+  }
+}
+
+
+/****
+Boby
+****/
+
+body {
+  background-color: #26344B;
+}
+
+body.page-boxed {
+  background-color: #C0C6C2;
+}

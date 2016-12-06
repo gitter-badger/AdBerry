@@ -1,0 +1,169 @@
+/* Login Page CCS */
+
+/* bg random image and back up collor */
+.login {
+  background-image: url("https://unsplash.it/1920/1080/?random"); 
+  background-repeat: no-repeat;
+  background-color: rgb(231, 80, 90);
+  }
+  .login a {
+    color: #edf4f8 !important; }
+
+/* logo */
+.login .logo {
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center; }
+
+/* Login panel syling*/
+.login .content {
+  background: rgba(0, 0, 0, 0.70);
+  padding: 30px 30px 30px 30px;
+  width: 400px;
+  margin: 10px auto 40px auto;
+  border-radius: 15px;}
+
+/* login header and sub */
+
+.login .form-title {
+  color: #edf4f8;
+  font-size: 19px;
+  font-weight: 400 !important;
+  margin-bottom: 20px;}
+
+.login .form-subtitle {
+  color: #c9dce9;
+  font-size: 17px;
+  font-weight: 300 !important;
+  padding-left: 10px; }
+
+.login .content h4 {
+  color: #555; }
+
+.login .content .hint {
+  color: #b7d1e2;
+  padding: 0;
+  font-size: 14px;
+  margin: 15px 0 7px 0; }
+
+.login .content .login-form,
+.login .content .forget-form {
+  padding: 0px;
+  margin: 0px; }
+
+.login .content .form-control {
+  border: none;
+  background-color: rgba(	255, 255, 255, 0.30);
+  border: 1px solid ;
+  height: 43px;
+  color: #d9ecf9; }
+  .login .content .form-control:focus, .login .content .form-control:active {
+    border: 1px solid #83b8db; }
+  .login .content .form-control::-moz-placeholder {
+    color: #d9ecf9;
+    opacity: 1; }
+  .login .content .form-control:-ms-input-placeholder {
+    color: #d9ecf9; }
+  .login .content .form-control::-webkit-input-placeholder {
+    color: #d9ecf9; }
+
+.login .content select.form-control {
+  padding-left: 9px;
+  padding-right: 9px; }
+
+.login .content .forget-form {
+  display: none; }
+
+.login .content .register-form {
+  display: none; }
+
+.login .content .form-title {
+  font-weight: 300;
+  margin-bottom: 25px; }
+
+.login .content .form-actions {
+  clear: both;
+  border: 0px;
+  padding: 0px 30px 25px 30px;
+  margin-left: -30px;
+  margin-right: -30px; }
+
+.form-actions .forget-password-block {
+  padding-top: 7px; }
+
+.login-options {
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  border-top: 1px solid #69a0c4;
+  border-bottom: 1px solid #69a0c4; }
+
+.login .forget-password {
+  font-size: 14px; }
+
+.login .content .forget-form .form-actions {
+  border: 0;
+  margin-bottom: 0;
+  padding-bottom: 20px; }
+
+.login .content .register-form .form-actions {
+  border: 0;
+  margin-bottom: 0;
+  padding-bottom: 0px; }
+
+.login .content .form-actions .checkbox {
+  margin-top: 8px;
+  display: inline-block; }
+
+.login .content .form-actions .btn {
+  margin-top: 1px; }
+
+.login .btn {
+  background-color: #5995bb;
+  border: 1px solid #72a9cc;
+  color: #8fc4e5;
+  font-weight: 600;
+  padding: 10px 25px !important; }
+  .login .btn:hover {
+    border: 1px solid #90bbd7;
+    background-color: #5995bb;
+    color: #8fc4e5; }
+
+.login .btn-default {
+  background-color: #5995bb;
+  border: 1px solid #72a9cc;
+  color: #8fc4e5;
+  font-weight: 600;
+  padding: 10px 25px !important; }
+  .login .btn-default:hover {
+    border: 1px solid #90bbd7;
+    background-color: #5995bb;
+    color: #8fc4e5; }
+
+.login .content .forget-password {
+  color: #d7eaf7;
+  font-size: 15px; }
+
+.login .content .rememberme {
+  margin-top: 8px; }
+
+.login .content .mt-checkbox {
+  color: #c9dce9 !important; }
+
+.login .content .mt-checkbox > span:after {
+  border-color: #c9dce9 !important; }
+
+.login .content .create-account {
+  text-align: center;
+  margin-top: 20px;}
+
+
+/* Option copyright */
+.login .copyright {
+  text-align: center;
+  margin: 10px auto 30px 0;
+  padding: 10px;
+  color: #FF0000;
+  font-size: 13px; }
+
