@@ -96,15 +96,4 @@ function GetDevice ($var) {
   }
 }
 
-function test(){
-  $conn =  mysql_connect($dbhost, $dbuser, $dbpass) or  
-  die("Could not connect: " . mysql_error());  ;
-  mysql_select_db($dbname);
-  $sql = mysql_query("SELECT COUNT(Click_ID) AS count FROM Clicks");
-  $row = mysql_fetch_assoc($sql);
-  $count = $row['count'];
-  echo $count;
-  mysql_close($conn);
-}
-
 ?>
