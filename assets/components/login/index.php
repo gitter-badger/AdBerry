@@ -4,7 +4,7 @@
         <title>AdBerry | Login</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+
         <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="../../../css/components-md.css" rel="stylesheet" id="style_components" type="text/css" />
         <link href="login.css" rel="stylesheet" type="text/css" />
@@ -134,28 +134,13 @@
         </div>
         <!-- Copyright hiden by default remove "hide" to activate-->
         <div class="copyright hide"> 2016 © Adberry. The free and opensource ad server. </div>
-        <!-- END LOGIN -->
-    <!-- BEGIN CORE PLUGINS -->
+        <!-- end login-->
+
         <script src="../../plugins/jquery.min.js" type="text/javascript"></script>
         <script src="../../plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-        <script src="../../plugins/jquery.blockui.min.js" type="text/javascript"></script>
-        <script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
-        <!-- END CORE PLUGINS -->
-        <!-- BEGIN PAGE LEVEL PLUGINS -->
-        <script src="../../plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
-        <script src="../../plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script> 
-        <script src="../../plugins/select2/js/select2.full.js" type="text/javascript"></script>
-        <!-- END PAGE LEVEL PLUGINS -->
-        <!-- BEGIN THEME GLOBAL SCRIPTS -->
-        <script src="../../../js/app.js" type="text/javascript"></script>
-        <!-- END THEME GLOBAL SCRIPTS -->
-        <!-- BEGIN PAGE LEVEL SCRIPTS -->
         <script src="login.js" type="text/javascript"></script>
         <script src="validate.js" type="text/javascript"></script>
-        <!-- END PAGE LEVEL SCRIPTS -->
-        <!-- BEGIN THEME LAYOUT SCRIPTS -->
-        <!-- END THEME LAYOUT SCRIPTS -->
+
     </body>
 
 </html>

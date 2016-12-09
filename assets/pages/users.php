@@ -15,11 +15,13 @@ License: Free and opensource not yet under a licene
   <link href="../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="../plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
   <link href="../plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+  
+  <link href="../../css/simple-sidebar.css" rel="stylesheet" type="text/css" />
   <link href="../../css/sidebar.css" rel="stylesheet" type="text/css" />
   <link href="../../css/header.css" rel="stylesheet" type="text/css" />
   <link href="../../css/components.css" rel="stylesheet" type="text/css" />
   <link href="../../css/themes/default.css" rel="stylesheet" type="text/css" id="style_color" />
-  <link href="../../css/custom.css" rel="stylesheet" type="text/css" />
+  <link href="../../css/index.css" rel="stylesheet" type="text/css" />
   
 <link rel="shortcut icon" href="favicon.ico" />
   <?php include("../functions.php");?>
@@ -335,31 +337,11 @@ License: Free and opensource not yet under a licene
       </div>
     </div>
     <!-- END FOOTER -->
-    <!-- BEGIN CORE PLUGINS -->
     <script src="../plugins/jquery.min.js" type="text/javascript"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="../plugins/js.cookie.min.js" type="text/javascript"></script>
     <script src="../plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-    <script src="../plugins/jquery.blockui.min.js" type="text/javascript"></script>
     <script src="../plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
-    <script src="../plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
-    <script src="../plugins/datatables/datatables.min.js" type="text/javascript"></script>
-    <script src="../../js/datatable.js" type="text/javascript"></script>
-    <!-- END CORE PLUGINS -->
-    <!-- BEGIN THEME GLOBAL SCRIPTS -->
-    <script src="../../js/app.js" type="text/javascript"></script>
-    <!-- END THEME GLOBAL SCRIPTS -->
-    <!-- BEGIN PAGE LEVEL SCRIPTS -->
     <script src="../../js/dashboard.js" type="text/javascript"></script>
-    <script src="../../js/table-datatables-managed.js" type="text/javascript"></script>
-    <script src="../../js/components-bootstrap-switch.js" type="text/javascript"></script>
-    <!-- END PAGE LEVEL SCRIPTS -->
-    <!-- BEGIN THEME LAYOUT SCRIPTS -->
-    <script src="../../js/layout.js" type="text/javascript"></script>
-    <script src="../../js/demo.js" type="text/javascript"></script>
-    <script src="../../js/quick-sidebar.js" type="text/javascript"></script>
-    <script src="../../js/quick-nav.js" type="text/javascript"></script>
-    <!-- END THEME LAYOUT SCRIPTS -->
 </body>
 
 </html>

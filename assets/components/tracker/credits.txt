@@ -1,1 +1,0 @@
-This script was made by ChristianL over at http://stackoverflow.com/questions/9514179/how-to-find-the-operating-system-version-using-javascript

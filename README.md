@@ -12,8 +12,8 @@ AdBerry is a self hostabled ad management solution. It allows you mange and disp
  - database scructure
 
 **Know bug**
- - Sub menu item behind other items
- - No easy install script(sql code is included)
+ - You cant insert/edit/delete any data
+ - Easy install is far form perfect
  - Code is a mess
 
 #Goals of this project 

@@ -12,14 +12,14 @@
 			<script language="javascript">
     		window.location.href = "assets/pages/index.php"
 			</script>
-			<?
+			<?php
 		}
 		else{
 			?>
 			<script language="javascript">
     		window.location.href = "assets/componets/login/index.php"
 			</script>
-			<?
+			<?php
 		}
 		?>
 		

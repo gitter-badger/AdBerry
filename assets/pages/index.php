@@ -7,6 +7,8 @@ License: Free and opensource not yet under a licene
 -->
 <html>
 <head>
+  <?php include("../functions.php"); 
+        include("../../config.php");?>
   <title>AdBerry Overview</title>
   <link rel="stylesheet" href="../plugins/chartist/chartist.min.css">
   <script src="../plugins/chartist/chartist.min.js"></script>
@@ -17,7 +19,6 @@ License: Free and opensource not yet under a licene
   <link href="../plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
   <link href="../plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
   
-  <link href="../../css/simple-sidebar.css" rel="stylesheet" type="text/css" />
   <link href="../../css/sidebar.css" rel="stylesheet" type="text/css" />
   <link href="../../css/header.css" rel="stylesheet" type="text/css" />
   <link href="../../css/components.css" rel="stylesheet" type="text/css" />
@@ -54,18 +55,8 @@ License: Free and opensource not yet under a licene
               <div class="details">
                 <div class="number">
                   <span>
-                  <?php 
-                      include("../../config.php");
-                      $conn =  mysql_connect($dbhost, $dbuser, $dbpass) or  
-                      die("Could not connect: " . mysql_error());  ;
-                      mysql_select_db($dbname);
-                      $sql = mysql_query("SELECT COUNT(View_ID) AS count FROM Views");
-                      $row = mysql_fetch_assoc($sql);
-                      $Views = $row['count'];
-                      echo $Views;
-                      mysql_close($conn);
-//                    test();
-                      ?></span>
+                    <?php echo Views(); ?>
+                  </span>
                 </div>
                 <div class="desc"> Views today </div>
               </div>
@@ -79,17 +70,9 @@ License: Free and opensource not yet under a licene
               </div>
               <div class="details">
                 <div class="number">
-                  <span><?php
-                      $conn =  mysql_connect($dbhost, $dbuser, $dbpass) or  
-                      die("Could not connect: " . mysql_error());  ;
-                      mysql_select_db($dbname);
-                      $sql = mysql_query("SELECT COUNT(Click_ID) AS count FROM Clicks");
-                      $row = mysql_fetch_assoc($sql);
-                      $Cliks = $row['count'];
-                      echo $Cliks;
-                      mysql_close($conn);
-//                       test();
-                       ?> </span>
+                  <span>
+                    <?php echo Clicks();?> 
+                  </span>
                 </div>
                 <div class="desc">clicks today</div>
               </div>
@@ -103,8 +86,7 @@ License: Free and opensource not yet under a licene
               </div>
               <div class="details">
                 <div class="number">
-                  <span><?php $CRT = 100 / $Views * $Cliks;
-                    echo $CRT."%"; ?></span>
+                  <span><?php echo CRT(); ?></span>
                 </div>
                 <div class="desc">CRT</div>
               </div>
@@ -131,16 +113,7 @@ License: Free and opensource not yet under a licene
               </div>
               <div class="details">
                 <div class="number">
-                  <span><?php
-                      $conn =  mysql_connect($dbhost, $dbuser, $dbpass) or  
-                      die("Could not connect: " . mysql_error());  ;
-                      mysql_select_db($dbname);
-                      $sql = mysql_query("SELECT COUNT(Ad_ID) AS count FROM Ads");
-                      $row = mysql_fetch_assoc($sql);
-                      $count = $row['count'];
-                      echo $count;
-                      mysql_close($conn);
-//                       test();
+                  <span><?php echo ads();
                        ?></span> </div>
                 <div class="desc"> Active ads </div>
               </div>
@@ -154,17 +127,7 @@ License: Free and opensource not yet under a licene
               </div>
               <div class="details">
                 <div class="number"> 
-                  <span><?php
-                      $conn =  mysql_connect($dbhost, $dbuser, $dbpass) or  
-                      die("Could not connect: " . mysql_error());  ;
-                      mysql_select_db($dbname);
-                      $sql = mysql_query("SELECT COUNT(Campain_ID) AS count FROM Campains");
-                      $row = mysql_fetch_assoc($sql);
-                      $count = $row['count'];
-                      echo $count;
-                      mysql_close($conn);
-//                       test();
-                       ?></span> </div>
+                  <span><?php echo Campains(); ?></span> </div>
                 <div class="desc"> Active campains </div>
               </div>
             </a>
@@ -283,20 +246,20 @@ License: Free and opensource not yet under a licene
                           <ul class="dropdown-menu pull-left" role="menu">
                             <li>
                               <a href="javascript:;">
-                                <i class="icon-docs"></i> New Post </a>
+                                <i class="icon-docs"></i> Item 1 </a>
                             </li>
                             <li>
                               <a href="javascript:;">
-                                <i class="icon-tag"></i> New Comment </a>
+                                <i class="icon-tag"></i> Item 2 </a>
                             </li>
                             <li>
                               <a href="javascript:;">
-                                <i class="icon-user"></i> New User </a>
+                                <i class="icon-user"></i> Item 3</a>
                             </li>
                             <li class="divider"> </li>
                             <li>
                               <a href="javascript:;">
-                                <i class="icon-flag"></i> Comments
+                                <i class="icon-flag"></i> Item 4
                                 <span class="badge badge-success">4</span>
                               </a>
                             </li>
@@ -308,33 +271,18 @@ License: Free and opensource not yet under a licene
                 </table>
               </div>
             </div>
-            <!-- END EXAMPLE TABLE PORTLET-->
           </div>
         </div>
-
       </div>
     </div>
   </div>
-  <!-- END CONTENT BODY -->
-  </div>
-  <!-- END CONTENT -->
-  </div>
-  <!-- END CONTAINER -->
-  <!-- BEGIN FOOTER -->
   <div class="page-footer">
     2016 &copy; AdBerry
   </div>
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
     <script src="../plugins/jquery.min.js" type="text/javascript"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="../plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
     <script src="../plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
-    <script src="../../js/dashboard.js" type="text/javascript"></script>
 </body>
 
 </html>
