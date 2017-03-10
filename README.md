@@ -1,5 +1,7 @@
 **Still in development **
 #AdBerry
+
+[![Join the chat at https://gitter.im/Ad-Berry/Lobby](https://badges.gitter.im/Ad-Berry/Lobby.svg)](https://gitter.im/Ad-Berry/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 The free and open-source ad server.
 
 ##what is Adberry
